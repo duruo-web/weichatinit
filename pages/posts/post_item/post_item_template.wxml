@@ -1,0 +1,22 @@
+<template name="post-item">
+ <view class="post-content">
+  <view class="post-imdata">
+    <image wx:if="{{img_condition}}" class="user-img" src="{{img.avatar}}"/>
+    <view class="name-data">
+      <text class="user-name">{{usName}}</text>
+      <text class="time small">{{time}}</text>
+    </view>
+  </view>
+  <view class="imgTitle">
+    <image class="post-img" src="{{img.imgSrc}}"/>
+    <text class="postItem-title">{{title}}</text>
+  </view>
+  <text class="new-content">{{detail}}</text>
+  <view>
+    <image class="icon" src="/images/icon/live.png"/>
+    <text class="small">{{collect}}</text>
+    <image class="icon" src="/images/icon/content.png" />
+    <text class="small">{{view}}</text>
+  </view>
+</view>
+</template>

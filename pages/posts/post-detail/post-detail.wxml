@@ -1,0 +1,20 @@
+<view class="container">
+  <image class="post_banner" src="{{postdata.post_banner}}"/>
+  <image catchtap="onMusic" class="music" src="{{isPlaymusic ? '/images/icon/music-stop.png': '/images/icon/music-start.png'}}"/>
+  <view class="user-time">
+    <image class="avatar" src="{{postdata.img.avatar}}"/>
+    <text class="name">{{postdata.usName}}</text>
+    <text>发表于{{postdata.time}}</text>
+  </view>
+  <view class="content">
+    <text>{{postdata.detail}}</text>
+  </view>
+   <view class="tool">
+    <view class="circle-img">
+      <image wx:if="{{collected}}" catchtap="onCash" src="/images/icon/star.png" />
+      <image wx:else catchtap="onCash" src="/images/icon/star1.png" />
+      <image catchtap="onShare" class="share" src="/images/icon/share.png" />
+    </view>
+    <view class="horizon"></view>
+  </view>
+</view>

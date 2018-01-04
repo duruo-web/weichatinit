@@ -1,0 +1,12 @@
+@import "post_item/post_item_template.wxss";
+page {
+  background-color: #ededed;
+}
+swiper, swiper image {
+  width: 100%;
+  height: 500rpx;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+}
